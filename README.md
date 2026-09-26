@@ -13,5 +13,4 @@ Output
    simple interest = p*t*r
 ```
 
-_© 2022 XYZ, Inc._
-Simple Interest Calculator project.
+_© 2022 XYZ, Inc. - Simple Interest Calculator_
