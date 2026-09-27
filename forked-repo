@@ -1,21 +1,6 @@
-curl -s https://api.github.com/repos/sanatariq09/mcino-Introduction-to-Git-and-GitHub
-
+curl -sS https://api.github.com/repos/sanatariq09/mcino-Introduction-to-Git-and-GitHub | python3 -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps({"full_name":d["full_name"],"fork":d["fork"],"parent":d["parent"]["full_name"]},indent=2))'
 {
-  "id": 1389519366,
-  "node_id": "R_kgDOUtJiBg",
-  "name": "mcino-Introduction-to-Git-and-GitHub",
   "full_name": "sanatariq09/mcino-Introduction-to-Git-and-GitHub",
-  ...
   "fork": true,
-  "parent": {
-    ...
-    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
-    ...
-  },
-  "source": {
-    ...
-    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
-    ...
-  },
-  ...
+  "parent": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
 }
