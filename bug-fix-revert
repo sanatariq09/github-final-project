@@ -1,9 +1,9 @@
-curl -sS https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/11790 | python3 -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps({"html_url":d["html_url"],"number":d["number"],"state":d["state"],"merged":d["merged"],"head_repo":d["head"]["repo"]["full_name"],"base_repo":d["base"]["repo"]["full_name"]},indent=2))'
+curl -fsS https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/11790 | python3 -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps({"html_url":d["html_url"],"number":d["number"],"state":d["state"],"merged":d["merged"],"head_repo":d["head"]["repo"]["full_name"],"base_repo":d["base"]["repo"]["full_name"]},indent=2))'
 {
   "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/11790",
   "number": 11790,
   "state": "closed",
   "merged": false,
-  "head_repo": "sanatariq09/mcino-Introduction-to-Git-and-GitHub",
+  "head_repo": "sanatariq09/github-final-project",
   "base_repo": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
 }

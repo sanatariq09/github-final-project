@@ -1,6 +1,6 @@
-curl -sS https://api.github.com/repos/sanatariq09/mcino-Introduction-to-Git-and-GitHub | python3 -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps({"full_name":d["full_name"],"fork":d["fork"],"parent":d["parent"]["full_name"]},indent=2))'
+curl -fsS https://api.github.com/repos/sanatariq09/github-final-project | python3 -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps({"full_name":d["full_name"],"fork":d["fork"],"parent":d["parent"]["full_name"]},indent=2))'
 {
-  "full_name": "sanatariq09/mcino-Introduction-to-Git-and-GitHub",
+  "full_name": "sanatariq09/github-final-project",
   "fork": true,
   "parent": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
 }
